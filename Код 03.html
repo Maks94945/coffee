@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coffee Time</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Arial', sans-serif;
+            background-color: #0f172a;
+            color: #ffffff;
+        }
+
+        header {
+            background-color: #1e293b;
+            background-image: linear-gradient(135deg, #1e293b 50%, #38bdf8 50%);
+            color: white;
+            text-align: center;
+            padding: 50px 20px;
+        }
+
+        header h1 {
+            font-size: 3.5rem;
+            margin: 0;
+            font-family: 'Georgia', serif;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #0f172a;
+            padding: 15px 0;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 20px;
+            font-size: 1.2rem;
+        }
+
+        nav a:hover {
+            color: #38bdf8;
+        }
+
+        .hero-section {
+            text-align: center;
+            padding: 60px 20px;
+            background-color: #1e293b;
+        }
+
+        .hero-section h2 {
+            font-size: 2.5rem;
+            color: #38bdf8;
+            margin: 0;
+        }
+
+        .hero-section p {
+            font-size: 1.1rem;
+            margin-top: 10px;
+        }
+
+        .menu-section {
+            padding: 40px 20px;
+            background-color: #0f172a;
+        }
+
+        .menu-section h2 {
+            text-align: center;
+            color: #38bdf8;
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+        }
+
+        .menu-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin: auto;
+            max-width: 1200px;
+        }
+
+        .menu-item {
+            background-color: #1e293b;
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+            color: white;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+        }
+
+        .menu-item img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 10px;
+            margin-bottom: 15px;
+        }
+
+        .menu-item h3 {
+            color: #38bdf8;
+            margin-bottom: 10px;
+        }
+
+        .menu-item p {
+            margin: 0;
+        }
+
+        .contact-section {
+            padding: 40px 20px;
+            background-color: #1e293b;
+            text-align: center;
+        }
+
+        .contact-section h2 {
+            color: #38bdf8;
+            font-size: 2.5rem;
+        }
+
+        footer {
+            background-color: #0f172a;
+            text-align: center;
+            padding: 20px;
+            color: white;
+            margin-top: 40px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Coffee Time</h1>
+        <p>Your perfect coffee destination</p>
+    </header>
+
+    <nav>
+        <a href="#menu">Menu</a>
+        <a href="#about">About Us</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <section class="hero-section">
+        <h2>Fresh Brews Every Day</h2>
+        <p>Explore the finest coffee blends crafted with passion.</p>
+    </section>
+
+    <section id="menu" class="menu-section">
+        <h2>Our Menu</h2>
+        <div class="menu-grid">
+            <div class="menu-item">
+                <img src="https://avatars.mds.yandex.net/i?id=f4c2d23196933c1553ade1c5d4b4431a_sr-12614240-images-thumbs&n=13" alt="Espresso">
+                <h3>Espresso</h3>
+                <p>$2.50</p>
+            </div>
+            <div class="menu-item">
+                <img src="https://cdn.helopal.club/images/447216d5-e96a-49e1-bb84-ae63933d5e2e.png" alt="Cappuccino">
+                <h3>Cappuccino</h3>
+                <p>$3.50</p>
+            </div>
+            <div class="menu-item">
+                <img src="https://i.pinimg.com/736x/ec/78/79/ec7879b4e6b8b2d3abdd11b82fb68485--espresso-coffee-coffee-coffee.jpg" alt="Latte">
+                <h3>Latte</h3>
+                <p>$4.00</p>
+            </div>
+            <div class="menu-item">
+                <img src="https://avatars.mds.yandex.net/get-sprav-products/5236693/2a0000018b8a079c09830152b6e660f89340/M_height" alt="Mocha">
+                <h3>Mocha</h3>
+                <p>$4.50</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact-section">
+        <h2>Contact Us</h2>
+        <p>Email: contact@coffeetime.com | Phone: +123 456 789</p>
+        <p>Address: 123 Coffee Lane, Brewtown</p>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Coffee Time.</p>
+    </footer>
+</body>
+</html>
